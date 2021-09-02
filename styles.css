@@ -11,6 +11,10 @@ a {
   font-weight: bold;
 }
 
+li {
+  list-style: none;
+}
+
 .container {
   background-color: #fff;
   width: 100vw;
@@ -31,11 +35,16 @@ header {
   font-size: 1.5em;
 }
 
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
+#fullNav {
+  display: none;
+}
+
+#mobileNav {
+  margin: 8px 25px 0 0;
+}
+
+#mobileNavMenu, #mobileNavOpen {
+  display: none;
 }
 
 nav ul li {
@@ -69,6 +78,10 @@ nav ul li {
   color: white;
 }
 
+#hero .name {
+  color: orange;
+}
+
 #photoSection {
   width: 100vw;
   display: -webkit-box;
@@ -99,6 +112,17 @@ footer {
 @media only screen and (min-width: 550px) {
   .photo {
     padding: 10px;
+  }
+  #fullNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #mobileNav {
+    display: none;
+  }
+  #mobileNavOpen {
+    display: none;
   }
   nav ul li {
     margin: 8px 30px 0 0;

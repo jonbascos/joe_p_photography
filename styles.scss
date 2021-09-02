@@ -9,6 +9,10 @@ a {
     color: black;
     font-weight: bold;
 }
+
+li {
+    list-style: none;
+}
     
 
 .container {
@@ -30,10 +34,18 @@ header {
     font-size: 1.5em;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
+#fullNav {
+    display: none;
 }
+
+#mobileNav {
+    margin: 8px 25px 0 0;
+}
+
+#mobileNavMenu, #mobileNavOpen {
+    display: none;
+}
+
 nav ul li {
     margin: 8px 10px 0 0
 }
@@ -59,6 +71,10 @@ nav ul li {
         padding: 10px;
         font-size: 2em;
         color: white; 
+    }
+
+    .name {
+        color: orange;
     }
 }
     
@@ -93,8 +109,20 @@ footer {
         padding: 10px;
     }
 
+    #fullNav {
+        display: flex; 
+    }
+
+    #mobileNav {
+        display: none;
+    }
+
+    #mobileNavOpen {
+        display: none;
+    }
+
     nav ul li {
-        margin: 8px 30px 0 0
+        margin: 8px 30px 0 0;
     }
 }
    
