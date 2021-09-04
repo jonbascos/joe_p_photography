@@ -47,12 +47,7 @@ nav {
 .nav-ul.show {
     display: flex;
 }
-
-// #logo {
-//     color: black;
-//     font-size: 1.5em;
-// }
-    
+   
 .hamburger {
     display: block;
     background-color: transparent;
@@ -102,15 +97,16 @@ nav ul li a{
 // Photos section CSS
 
 #photoSection {
-    width: 100vw;
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin: auto;
 }
 
 .photo {
-    padding: 10px 0;
+    padding: 20px 0;
     width: 400px;
     height: 400px;  
 }
