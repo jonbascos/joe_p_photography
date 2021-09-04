@@ -59,7 +59,7 @@ nav {
     border: 0;
     font-size: 20px;
     cursor: pointer;
-    // padding: 0 10px;
+    padding: 0 10px;
 }
 
 .hamburger:focus {
@@ -125,17 +125,18 @@ footer {
 
 // Media Queries
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 520px) {
     nav {
         align-items: center;
         justify-content: space-between;
-        // flex-wrap: nowrap;
+        flex-wrap: nowrap;
     }
 
     .nav-ul {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        // width: 25%;
     }
 
     .hamburger {
@@ -143,6 +144,7 @@ footer {
     }
 
     #logo {
+        width: 50%;
         font-size: 1.5em;
     }
 }
